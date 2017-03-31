@@ -44,14 +44,17 @@ function showLink(phrase) {
 		if(phrase === phraseIndex) {
 			console.log(linkIndex);
 			console.log(phraseIndex);
+			$("#targetVideo").attr("src", linkIndex);
 			return linkIndex;
 		}
 	}
 }
 
 $(document).ready(function(){
-	$("button").on("click", function(){
-		var phraseValue = this.value;
+	$(".btn-flat").on("click", function(){
+		console.log("clicked");
+		var phraseValue = $(this).attr("value");
+		console.log(phraseValue);
 		showLink(phraseValue);
 	});
 
