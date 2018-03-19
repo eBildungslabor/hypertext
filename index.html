@@ -3,6 +3,7 @@
 <head>
 	<title>Hypertext on Steroids</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -20,15 +21,15 @@
 <!-- Main -->
 	<main class="container">
 		<div class="row">
-			<h1 class="center"><a class="btn-flat" value="The Waste Land">The Waste Land</a></h1>
+			<span value="The Waste Land"><h1 class="center">The Waste Land</h1></span>
 			<p class="center">BY T.S. ELIOT</p>
 		</div>
 		<div class="row">
 			<div class="col l6">
 				<p> 
-					<span><h5>I. The Burial of the Dead</h5></span><br/>
+					<span value="I. The Burial of the Dead"><h5>I. The Burial of the Dead</h5></span><br/>
 
-					<span>April is the cruellest month, breeding</span><br/>
+					<span value="April is the cruellest month">April is the cruellest month,</span><span value="breeding"> breeding</span><br/>
 					<span>Lilacs out of the dead land, mixing</span><br/>
 					<span>Memory and desire, stirring</span><br/>
 					<span>Dull roots with spring rain.</span><br/>
@@ -49,9 +50,9 @@
 				</p>
 			</div>
 			<div class="col l6">
-				<span><h5 class="center">Title</h5></span><br/>
+				<span><h5 class="center" id="title-name"></h5></span><br/>
 				<div class="video-container">
-		        	<iframe id="targetVideo" width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+		        	<video id="targetVideo" width="853" height="480" src="#"></video>
 		      	</div>
 			</div>
 		</div>

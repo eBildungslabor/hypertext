@@ -42,8 +42,8 @@ function showLink(phrase) {
 		var phraseIndex = relatedLink[i].phrase;
 		var linkIndex = relatedLink[i].link;
 		if(phrase === phraseIndex) {
-			console.log(linkIndex);
-			console.log(phraseIndex);
+			// console.log(linkIndex);
+			// console.log(phraseIndex);
 			$("#targetVideo").attr("src", linkIndex);
 			return linkIndex;
 		}
@@ -51,9 +51,9 @@ function showLink(phrase) {
 }
 
 $(document).ready(function(){
-	$(".btn-flat").on("click", function(){
-		console.log("clicked");
+	$("span").on("click", function(){
 		var phraseValue = $(this).attr("value");
+		$("#title-name").html(phraseValue);
 		console.log(phraseValue);
 		showLink(phraseValue);
 	});
