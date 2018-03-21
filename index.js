@@ -55,7 +55,8 @@ $(document).ready(function(){
 		var phraseValue = $(this).attr("value");
 		$("#title-name").html(phraseValue);
 		console.log(phraseValue);
-		showLink(phraseValue);
+		var link = showLink(phraseValue);
+		console.log(link);
 	});
 
 });
